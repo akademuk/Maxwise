@@ -13,6 +13,17 @@ button {
     align-items: center;
     justify-content: space-between;
 }
+.showContainer button {
+    transition: all 0.3s;
+}
+.showContainer button:hover {
+    background: #F7B8A5;
+    transition: all 0.3s;
+}
+.showContainer button:active {
+    background: #EEA088;
+    transition: all 0.3s;
+}
 .bunnerLeftBtn {
     transition: all 0.3s;
     border: 1px solid transparent;
