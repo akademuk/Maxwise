@@ -5,6 +5,17 @@ body {
 }
 button {
     font-family: 'Poppins', sans-serif;
+} 
+.fullpage {
+   position: fixed;
+   bottom: 10%;
+   right: 5%;
+   z-index: 50; 
+   background: transparent;
+}
+.fullpage button {
+    background: transparent;
+    border: none;
 }
 .wrapper {
     max-width: 1185px;
@@ -230,7 +241,7 @@ button {
     position: absolute;
     top: 15%;
     right: 0;
-    transform: translateX(100%);
+    transform: translateX(110%);
     transition: 1s all;
     z-index: 100;
 }
@@ -1444,22 +1455,216 @@ h1 {
     color: rgba(18, 17, 39, 0.56);
     margin-bottom: 32px;
 }
+.supportForm .wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.supportForm .wrapper form {
+    display: flex;
+    width: 982px;
+    justify-content: space-between;
+    align-items: center;
+}
+.supportForm .wrapper form input {
+    padding: 6px 16px 5px 35px;
+    border: 1px solid rgba(18, 17, 39, 0.12);
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 180%;
+    width: 256px;
+    box-sizing: border-box;
+    color: rgba(18, 17, 39, 0.4);
+}
+.supportForm .wrapper form input::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 180%;
+    color: rgba(18, 17, 39, 0.4);
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.supportFormSubmit input {
+    padding: 14px 32px 14px 15px !important;
+    width: 140px !important;
+    background: #FCCEC0;
+    border-radius: 64px !important;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 150%;
+    color: #1E1D28 !important;
+    border: none !important;
+    justify-content: center;
+}
+.supportFormSubmit {
+    position: relative;
+}
+.supportFormSubmit::before {
+    content: "";
+    background: url(../img/btnArrow.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    margin-left: 12px;
+    display: flex;
+    position: absolute;
+    top: 21px;
+    right: 30px;
+}
+.supportFormName {
+    position: relative;
+}
+.supportFormName::before {
+    content: "";
+    background: url(../img/phoneIcon.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 17px;
+    margin-left: 12px;
+    display: flex;
+    position: absolute;
+    top: 10px;
+    left: 3px;
+}
+.supportFormTel {
+    position: relative;
+}
+.supportFormTel::before {
+    content: "";
+    background: url(../img/telIcon.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    margin-left: 12px;
+    display: flex;
+    position: absolute;
+    top: 10px;
+    left: 3px;
+}
+.supportFormEmail {
+    position: relative;
+}
+.supportFormEmail::before {
+    content: "";
+    background: url(../img/emailIcon.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 12px;
+    margin-left: 12px;
+    display: flex;
+    position: absolute;
+    top: 13px;
+    left: 3px;
+}
+.feedbackContentSectionItem {
+    padding: 12px;
+    background: #FFF5F2;
+    box-shadow: 0px 20px 50px rgba(18, 17, 39, 0.08);
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+.feedbackContentSection {
+    width: 32%;
+}
+.feedbackContentSectionItemTop {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 8px;
+    justify-content: flex-start;
+}
+.feedbackContent {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.hv{
+    font-weight: 800;
+    font-size: 17px;
+    line-height: 150%;
+    color: #000000;
+    min-width: 60px;
+    height: 60px;
+    background: #F7B8A5;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 16px;
+}
+.NamesName {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 150%;
+    color: #1E1D28;
+}
+.date {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 180%;
+    color: #1E1D28;
+}
+.feedbackContentText {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 150%;
+    color: #7E7C93;
+    margin-bottom: 8px;
+}
+.showOriginal {
+    padding: 6px 4px;
+    border-radius: 32px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: #1E1D28;
+    text-decoration: none;
+}
+.feedback {
+    background: #F4E3C4;
+    padding: 128px 0;
+}
+.feedback .wrapper{
+    flex-direction: column;
+}
+.feedback h2 {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 120%;
+    color: #292929;
+}
+.feedbackTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 64px;
+}
+.feedbackTop button {
+    padding: 14px 32px;
+    background: #FCCEC0;
+    border-radius: 64px;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 150%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #1E1D28;
+    display: flex;
+    align-items: center;
+    border: none;
+}
+.feedbackTop button img {
+    margin-left: 12px;
+}
+.feedbackContent {
+    width: 100%;
+}
 
 
 
@@ -1645,7 +1850,7 @@ h1 {
     content: none;
 }
 .bunnerRight {
-    display: block;
+    display: flex;
 }
 .bunnerLeft h1{
     font-size: 35px;
@@ -1760,6 +1965,12 @@ header {
         padding: 0 23px;
         box-sizing: border-box;
     }
+    .bunnerRight {
+        height: 300px;
+    }
+    .bunnerRight img {
+        height: 100%;
+    }
     .transformSectionLeft {
         padding-right: 16px;
         box-sizing: border-box;
@@ -1768,7 +1979,13 @@ header {
         width: max-content !important;
     }
     .transformSectionLeft {
-        margin-bottom: 32px;
+        margin-bottom: 60px;
+    }
+    .transformSectionLeft {
+        padding-left: 0 !important;
+    }
+    .transformSection .wrapper {
+        padding-left: 16px !important;
     }
     .disNone {
         display: none !important;
@@ -1975,6 +2192,7 @@ header {
                 bottom: 0;
           }
     }
+    
 }
 @media (max-width: 1350px) {
     .transformSection .wrapper {
