@@ -2042,7 +2042,18 @@ header {
         overflow: unset;
     }
 }
-
+@media (max-width: 400px) {
+    .showContainer {
+        width: 90VW;
+        height: max-content;
+    }
+    .showContainerFull {
+        width: 50%;
+    }
+    .showContainerAnimation {
+        transform: translateX(-5%);
+    }
+}
 
 
 
