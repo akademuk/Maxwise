@@ -12,12 +12,22 @@ $(function () {
         appendDots: $('.transformSliderDots'),
         responsive: [
             {
-                breakpoint: 1200,
+                breakpoint: 1300,
                 settings: {
-                    rows: 0,
+                    rows: 1,
                     slidesPerRow: 1,
                     slidesToScroll: 1,
-                    slidesToShow: 1,
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    rows: 1,
+                    slidesPerRow: 1,
+                    slidesToScroll: 1,
+                    slidesToShow: 1.5,
+                    infinite: false,
                 }
             }
         ]
