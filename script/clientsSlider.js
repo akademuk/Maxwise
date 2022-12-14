@@ -1,19 +1,25 @@
-if (window.matchMedia("(max-width: 1200px)").matches) {
-    $('.aboutMaxwiseClientsImg').slick({
-        infinite: true,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        dots: false,
-        arrows: false,
-        responsive: [
-            {
-              breakpoint: 768,
+$(function () {
+  $('.aboutMaxwiseClientsImg').slick({
+      infinite: false,
+      dots: false,
+      arrows: false,
+      slidesToShow: 6,
+      slidesToScroll: 1,
+      responsive: [
+          {
+              breakpoint: 1200,
               settings: {
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                infinite: true,
+                  slidesToScroll: 1,
+                  slidesToShow: 5,
               }
-            },
-          ]
-    });
-} 
+          },
+          {
+            breakpoint: 767,
+            settings: {
+                slidesToScroll: 1,
+                slidesToShow: 3,
+            }
+        },
+      ]
+  });
+});

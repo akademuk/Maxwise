@@ -1,8 +1,8 @@
 $(function () {
-    $('.transformSlider').slick({
+    $('.servicesSlider').slick({
         dots: true,
         arrows: true,
-        infinite: true,
+        infinite: false,
         slidesToShow: 4.5,
         slidesToScroll: 1,
         variableWidth: false,
@@ -13,22 +13,17 @@ $(function () {
             {
                 breakpoint: 1300,
                 settings: {
-                    rows: 1,
-                    slidesPerRow: 1,
                     slidesToScroll: 1,
-                    slidesToShow: 2,
+                    slidesToShow: 3,
                 }
             },
             {
-                breakpoint: 992,
+                breakpoint: 767,
                 settings: {
-                    rows: 1,
-                    slidesPerRow: 1,
                     slidesToScroll: 1,
                     slidesToShow: 1.5,
-                    infinite: false,
                 }
-            }
+            },
         ]
     });
 });
