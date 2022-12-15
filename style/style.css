@@ -9,6 +9,9 @@ body {
 button {
     font-family: 'Poppins', sans-serif;
 } 
+.logoHeader {
+    margin-top: -13px !important;
+}
 .fullpage {
    position: fixed;
    bottom: 10%;
@@ -691,6 +694,17 @@ h1 {
     cursor: pointer;
     margin-right: 16px;
 }
+.paginationPrev {
+    width: 48px;
+    height: 48px;
+    border: 1px solid rgba(30, 29, 40, 0.12);
+    border-radius: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-right: 16px;  
+}
 .servicesSliderContainer {
     width: 100%;
     padding-left: 128px;
@@ -700,6 +714,40 @@ h1 {
     overflow: hidden;
 }
 .servicesSliderNext {
+    width: 48px;
+    height: 48px;
+    border: 1px solid rgba(30, 29, 40, 0.12);
+    border-radius: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.paginationNumber button:nth-last-of-type(1) {
+    margin-right: 16px;
+}
+.paginationNumber button {
+    padding: 6px 13px;
+    background: #E1876C;
+    border-radius: 45px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    color: #F4F2FF;
+    border: none;
+    width: 34px;
+    height: 33px;
+    margin-right: 8px;
+}
+.activePagination {
+    background: rgba(30, 29, 40, 0.12) !important;
+    color: rgba(30, 29, 40, 0.32) !important;
+}
+.pagination {
+    display: flex;
+    align-items: center;
+}
+.paginationNext {
     width: 48px;
     height: 48px;
     border: 1px solid rgba(30, 29, 40, 0.12);
@@ -2004,6 +2052,204 @@ h1 {
 .fromAreasTabsContainerRight {
     height: 100%;
 }
+.headerBlog {
+    background: url(../img/noiseBlog.png), #FFF5F2 !important;
+    background-size: contain;
+    background-repeat: repeat;
+    width: 100%;
+}
+.headerBlog .wrapper {
+    background: url(../img/noiseBlog.png), #FFF5F2 !important;
+    background-size: contain;
+    background-repeat: repeat;
+    width: 100%;
+}
+.blogTopPage {
+    background: url(../img/noiseBlog.png), #FFF5F2 !important;
+    background-size: contain;
+    background-repeat: repeat;
+    width: 100%;
+    padding-top: 136px;
+    padding-bottom: 16px;
+}
+.blogTopPage .wrapper {
+    justify-content: flex-start !important;
+}
+.headerBlog .wrapper {
+    max-width: 1185px;
+    margin: 0 auto;
+    padding: 0;
+}
+.blogContent .wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.blogTopPage .wrapper button {
+    margin-left: 0;
+    padding: 6px 20px;
+    border-radius: 0;
+    width: max-content;
+    border: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: #1E1D28;
+    background: transparent;
+}
+.blogTopPage .wrapper button:after {
+    content: none;
+}
+.blogTopHome {
+    border-right: 1px solid#FCCEC0 !important;
+}
+.blogContentTop {
+    display: flex;
+    align-items: center;
+    margin-top: 58px;
+    justify-content: space-between;
+    margin-bottom: 32px;
+    width: 100%;
+}
+.blogTopPageBtn {
+    color: rgba(30, 29, 40, 0.32) !important;
+} 
+.blogContentTop h2 {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 120%;
+    color: #343243;
+}
+.blogContent {
+    background: url(../img/noiseBlog.png), #FFF5F2 !important;
+    background-size: contain;
+    background-repeat: repeat;
+    width: 100%;
+}
+.blogContentParent {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+.blogSection {
+    padding: 32px;
+    box-sizing: border-box;
+}
+.blogSection h3 {
+    height: 80px;
+    overflow: hidden;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 120%;
+    color: #1E1D28;
+}
+.blogSection p {
+    height: 190px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #646278;
+    overflow: hidden;
+}
+.div1 { 
+    grid-area: 1 / 1 / 5 / 4; 
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    margin-right: 24px;
+    margin-bottom: 24px;
+    height: 416px;
+}
+.div2 { 
+    grid-area: 5 / 1 / 7 / 3; 
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    margin-right: 24px;
+    height: 200px;
+}
+.div3 { 
+    grid-area: 5 / 3 / 7 / 5; 
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    margin-right: 24px;
+    height: 200px;
+}
+.div3 .blogSection h3,
+.div4 .blogSection h3,
+.div2 .blogSection h3 {
+    height: 140px;
+}
+.div4 { 
+    grid-area: 5 / 5 / 7 / 7; 
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    height: 200px;
+}
+.div5 { 
+    grid-area: 1 / 4 / 3 / 7; 
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    height: 200px;
+}
+.div6 { 
+    grid-area: 3 / 4 / 5 / 7; 
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+    height: 200px;
+}
+.div6 h3 {
+    height: 42px;
+    overflow: hidden;
+    margin-bottom: 24px;
+}
+.div5 h3 {
+    height: 42px;
+    overflow: hidden;
+    margin-bottom: 24px;
+}
+.div5 .blogSection p,
+.div6 .blogSection p {
+    height: 60px;
+    overflow: hidden;
+}
+.blogSectionImg img{
+    border-radius: 0 8px 8px 0;
+}
+.blogSection button {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: #1E1D28;
+    background: transparent;
+    border: none;
+    padding: 6px 20px;
+    margin-top: 24px;
+}
+.div5 button {
+    display: none;
+}
+.blogContent {
+    margin-top: -1px;
+}
+
+
+
+
+
+
 
 
 
@@ -2042,6 +2288,9 @@ h1 {
     header .wrapper {
         padding: 0 50px !important;
     }
+    .headerBlog .wrapper {
+        max-width: 100%;
+    }
 }
 @media (max-width: 1350px) {
     .blogSliderPrev {
@@ -2058,6 +2307,9 @@ h1 {
     margin: 0;
     padding: 0 64px;
     box-sizing: border-box;
+}
+.logoHeader {
+    margin-top: 0 !important;
 }
 .faq {
     padding: 64px 0;
@@ -2596,6 +2848,132 @@ header {
 .blogContent .slick-list .slick-track .slick-slide {
     margin: 0 8px;
 }
+.blogContentParent {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+.div1 { grid-area: 1 / 1 / 2 / 4; }
+.div2 { grid-area: 3 / 3 / 4 / 5; }
+.div3 { grid-area: 3 / 5 / 4 / 7; }
+.div4 { grid-area: 3 / 1 / 4 / 3; }
+.div5 { grid-area: 1 / 4 / 2 / 7; }
+.div6 { grid-area: 2 / 1 / 3 / 7;}
+
+.div1,
+.div5 {
+    min-width: 312px;
+    height: 300px;
+    max-width: 100%;
+}
+.div6 {
+    height: 300px;
+    max-width: 100%; 
+    display: flex;
+    justify-content: space-between;
+}
+.blogSection {
+    width: 50%;
+}
+.blogSectionImg {
+    width: 50%;
+}
+.blogSectionImg img {
+    max-width: 100%;
+    object-fit: cover;
+    object-position: top;
+    width: 100%;
+}
+.blogContentTop h2 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 140%;
+}
+.blogContent .wrapper {
+    position: relative;
+}
+.blogContent {
+    padding-bottom: 150px;
+}
+.pagination {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%)
+}
+.div4 {
+    margin-right: 16px;
+}
+.div3 {
+    margin-right: 0;
+}
+.div4,
+.div2,
+.div3 {
+    flex-direction: column;
+    height: 250px;
+    min-width: 200px;
+    max-width: 100%;
+}
+.div4 .blogSection,
+.div2 .blogSection,
+.div3 .blogSection{
+   padding: 16px;
+   width: 100%;
+}
+.div4 .blogSection h3,
+.div2 .blogSection h3,
+.div3 .blogSection h3{
+   height: 70px;
+}
+.div4 .blogSectionImg,
+.div2 .blogSectionImg,
+.div3 .blogSectionImg{
+   width: 100%;
+   height: 150px;
+}
+.div4 .blogSectionImg img,
+.div2 .blogSectionImg img,
+.div3 .blogSectionImg img{
+   border-radius: 0 0 8px 8px;
+}
+.div6 .blogSection p {
+    height: 75px;
+    margin-top: 24px;
+}
+.blogSection h3 {
+    height: 80px;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 150%;
+    margin-bottom: 0;
+}
+.div5 .blogSection p {
+    height: 75px;
+}
+.blogSection p {
+    height: 75px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 180%;
+}
+.blogSection {
+    height: 100%;
+}
+.blogSectionImg {
+    height: 100%;
+}
+.blogSectionImg img {
+    height: 100%;
+}
+.blogSection button {
+    padding: 0;
+}
+.div5 button {
+    display: block;
+}
 }
 @media(max-width: 767px) {
     .bunner .wrapper .bunnerLeft{
@@ -2997,6 +3375,43 @@ header {
     }
     .servicesSlider .slick-list .slick-track .slick-slide {
         margin: 0 8px;
+    }
+    .blogContentParent {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(6, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        max-width: 100%;
+        width: 100%;
+    }  
+    .div1 { grid-area: 1 / 1 / 3 / 3; }
+    .div2 { grid-area: 7 / 2 / 8 / 3; }
+    .div3 { grid-area: 8 / 1 / 9 / 2; }
+    .div4 { grid-area: 7 / 1 / 8 / 2; }
+    .div5 { grid-area: 3 / 1 / 5 / 3;}
+    .div6 { grid-area: 5 / 1 / 7 / 3; }
+    .blogContent .wrapper {
+        padding: 0 16px;
+    }
+    .div1,
+    .div5,
+    .div6 {
+        min-width: 100%;
+        width: 100%;
+    }
+    .div4,
+    .div3,
+    .div2 {
+        width: 100%;
+        max-width: 95%;
+        min-width: 50%;
+    }
+    .pagination {
+        bottom: -100px;
+        width: 100%;
+        left: 0;
+        transform: unset;
     }
 }
 @media (max-width: 1350px) {
