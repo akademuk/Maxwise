@@ -2867,7 +2867,7 @@ header {
           }
     }
     .fromAreasSuport {
-        padding: 80px 0 !important;
+        padding: 64px 0 !important;
     }
     .stages .wrapper {
         padding: 0 16px;
@@ -2881,6 +2881,8 @@ header {
     .stagesRight ul li {
         width: 100%;
         box-sizing: border-box;
+        padding-bottom: 16px;
+        border-bottom: 1px solid #FCCEC0;
         margin-bottom: 16px;
     }
     .supportForm {
@@ -2968,6 +2970,33 @@ header {
         display: block;
         margin: 0 auto;
         padding-left: 0 !important;
+    }
+    .suportbunnerLeft h1 {
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 130%;
+        width: 100%;
+        margin-bottom: 32px;
+    }
+    .supportFormSubmit input {
+        text-align: left;
+        padding-left: 45px !important;
+    }
+    .aboutMaxwiseClientsImgItem {
+        height: 50px;
+        margin: 0;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+    }
+    .services {
+        padding-top: 64px;
+    }
+    .servicesSliderDots {
+        padding: 0 16px;
+    }
+    .servicesSlider .slick-list .slick-track .slick-slide {
+        margin: 0 8px;
     }
 }
 @media (max-width: 1350px) {
