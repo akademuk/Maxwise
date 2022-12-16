@@ -383,7 +383,6 @@ header .wrapper {
     max-width: 100%;
     overflow: hidden;
     max-width: 2000px;
-    width: 100%;
 }
 header .wrapper ul {
     display: flex;
@@ -843,7 +842,10 @@ h1 {
     flex-direction: column;
 }
 .servicesClients .wrapper .aboutMaxwiseClientsImg {
-    width: 100%;
+    width: 100% !important;
+}
+.aboutMaxwiseClientsImg {
+    width: 100% !important;
 }
 .servicesClients {
     background: #F4E3C4;
@@ -2125,7 +2127,7 @@ h1 {
     color: #343243;
 }
 .blogContent {
-    background: url(../img/noiseBlog.png), #FFF5F2 !important;
+    background:#FFF5F2 !important;
     background-size: contain;
     background-repeat: repeat;
     width: 100%;
@@ -2266,10 +2268,6 @@ h1 {
 .tabsList1 ul li:before {
     content: "✅";
 
-}
-.fromAreasTabsContainer {
-    flex-direction: column;
-    align-items: flex-start;
 }
 .fromAreasRegistrationRight {
     position: static;
@@ -2448,8 +2446,14 @@ h1 {
 .goonServices {
     padding: 215px 0;
 }
-
-
+.aboutMaxwiseClientsImg .slick-list{
+    width: 100%;
+}
+.aboutMaxwiseClientsImg .slick-list .slick-track {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 
 
@@ -2497,10 +2501,23 @@ h1 {
     padding: 0 64px;
     box-sizing: border-box;
 }
+.blogSliderPrev {
+    top: 20% !important;
+}
+.blogSliderNext {
+    top: 20% !important;
+}
+    .fromAreasRight {
+        width: 100%;
+    }
 .fromAreasTabsContainer2 h3 {
     font-weight: 700;
     font-size: 20px;
     line-height: 140%;
+}
+.fromAreasTabsContainer {
+    flex-direction: column;
+    align-items: flex-start;
 }
 .tabsList2 h3 {
     font-weight: 700;
@@ -3027,6 +3044,29 @@ header {
 .fromAreasTabsContainerLeft  {
     width:80% !important;
 }
+.fromAreasTabsContainer {
+    position: absolute;
+    bottom: -100%;
+    right: 0;
+    transform: translateY(100%);
+    transition: .3s all;
+    z-index: 100;
+}
+.activeBlog {
+    animation: bear-animation .3s;
+    transform: translateY(0);
+    z-index: 100;
+    bottom: 0;
+  }
+  
+   @keyframes bear-animation {
+      0% {
+          transform: translateY(100%);
+      }
+      100% {
+            transform: translateY(0);
+      }
+}
 .fromAreas .wrapper {
     padding-left: 64px !important;
 }
@@ -3106,9 +3146,6 @@ header {
 }
 .blogContent .wrapper {
     position: relative;
-}
-.blogContent {
-    padding-bottom: 150px;
 }
 .pagination {
     position: absolute;
@@ -3231,19 +3268,32 @@ header {
     display: flex;
     box-shadow: 0px 20px 50px rgba(18, 17, 39, 0.08);
     background: #FFF5F2;
-    border-radius: 24px;
-    border: 1px solid #181739;
+    border-radius: 24px 24px 0 0;
     width: 100%;
     flex-direction: column-reverse;
+    align-items: center;
+    padding-top: 100px !important;
 }
-.fromAreasTabsContainerLeft {
-    width: 100% !important;
-    max-width: 100%;
+
+.fromAreasTabsContainer {
+    background: #FFF5F2;
+    border-radius: 24px;
+    padding:32px 16px;
+    overflow-y: scroll;
+    height: 70vh;
     box-sizing: border-box;
-    min-width: 100%;
 }
 .fromAreas .fromAreasLeft {
     padding: 64px 0 !important;
+}
+.fromAreasTabsContainer svg {
+    display: block !important;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.fromAreasTabsContainer.activeBlog {
+    flex-direction: row !important;
 }
 }
 @media(max-width: 767px) {
@@ -3251,6 +3301,18 @@ header {
         width: 100%;
         padding: 0 23px;
         box-sizing: border-box;
+    }
+    .showContainer  {
+        background: transparent !important;
+    }
+    .aboutMaxwiseClientsImg  .slick-list {
+        margin: 0 -12px;
+    }
+    .aboutMaxwise {
+        padding-bottom: 0;
+    }
+    .aboutMaxwiseClientsImg  .slick-list .slick-track .slick-slide{
+        margin: 0 12px;
     }
     .suportbunnerLeft {
         margin-bottom: 50px;
@@ -3285,6 +3347,11 @@ header {
     }
     .transformSectionLeft h4 {
         width: max-content !important;
+        box-sizing: border-box;
+    }
+    .showContainer svg {
+        width: 20px;
+        height: 20px;
     }
     .transformSectionLeft {
         margin-bottom: 60px;
@@ -3347,7 +3414,7 @@ header {
         object-fit: cover;
         width: 100%;
         object-position: top;
-        height: 200px;
+        height: auto;
         margin-bottom: 24px;
     }
     .fromAreasTabsContainer {
@@ -3486,29 +3553,6 @@ header {
     .aboutMaxwiseLeft {
         padding: 0 16px;
         box-sizing: border-box;
-    }
-    .fromAreasTabsContainer {
-        position: absolute;
-        bottom: -100%;
-        right: 0;
-        transform: translateY(100%);
-        transition: .3s all;
-        z-index: 100;
-    }
-    .activeBlog {
-        animation: bear-animation .3s;
-        transform: translateY(0);
-        z-index: 100;
-        bottom: 0;
-      }
-      
-       @keyframes bear-animation {
-          0% {
-              transform: translateY(100%);
-          }
-          100% {
-                transform: translateY(0);
-          }
     }
     .fromAreasSuport {
         padding: 64px 0 !important;
@@ -3685,6 +3729,10 @@ header {
     .fromAreasRegistration .wrapper {
         padding: 64px 16px !important;
     }
+    .fromAreasTabsContainer svg {
+        width: 20px;
+        height: 20px;
+    }
 
 }
 @media (max-width: 1350px) {
@@ -3773,13 +3821,34 @@ header {
         background: transparent;
     }
     .showContainerFull {
-        width: 50%;
+        width: 100%;
     }
     .showContainerAnimation {
         transform: translateX(-5%);
     }
+    .transformSectionLeft h4 {
+        width: 100% !important;
+    }
+    .Just {
+        margin-top: 20px;
+    }
+    .showContainerSection{
+        height: 300px;
+    }
 }
-
+@media (max-width: 350px) {
+.transformSectionRight {
+    padding-top: 50px;
+}
+.transformItem button {
+    padding: 14px;
+}
+.blogContent {
+    background: #FFF5F2 !important;
+    padding-top: 100px;
+    padding-bottom: 0;
+}
+}
 
 
 

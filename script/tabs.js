@@ -1,5 +1,5 @@
 
-  if (screen.width >= 767) {
+  if (screen.width >= 1200) {
     $(document).ready(function($) {
       $('.fromAreasTabsContainer').hide();
       $('.fromAreasTabsContainer:first').show();
@@ -10,7 +10,6 @@
         $('.fromAreasTabsContainer').hide().addClass("activeBlog");
     
         var selectTab = $(this).find('a').attr("href");
-    
         $(selectTab).fadeIn();
         $(".closeSvgBlog").click(function(){
           $(".fromAreasTabsContainer").hide();
@@ -25,7 +24,7 @@
 
 
 
-  if (screen.width <= 767) {
+  if (screen.width <= 1200) {
     $(document).ready(function($) {
       $('.fromAreasTabsContainer').hide();
       $('.tabs li:first').removeClass('active');
@@ -33,13 +32,13 @@
         $('.tabs li').removeClass('active');
         $(this).addClass('active');
         $('.fromAreasTabsContainer').hide().addClass("activeBlog");
-        // $('.bodyOn').addClass('body');
+        $('.bodyOn').addClass('body');
         var selectTab = $(this).find('a').attr("href");
     
         $(selectTab).fadeIn();
         $(".closeSvgBlog").click(function(){
           $(".fromAreasTabsContainer").hide();
-          // $('.bodyOn').removeClass('body');
+          $('.bodyOn').removeClass('body');
         });
       });
     });
