@@ -12,6 +12,9 @@ button {
 .logoHeader {
     margin-top: -13px !important;
 }
+a {
+    outline: none !important;
+}
 .fullpage {
    position: fixed;
    bottom: 10%;
