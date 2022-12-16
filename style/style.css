@@ -3205,6 +3205,45 @@ header {
 .fromAreasRegistration .wrapper .fromAreasLeft h2 br {
     display: none;
 }
+.fromAreasRight {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    
+}
+.fromAreasLeft {
+    position: relative;
+    z-index: 10;
+}
+.fromAreasTabsRegitstration.activeBlog {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 20px 50px rgba(18, 17, 39, 0.08);
+    background: #FFF5F2;
+    border-radius: 24px;
+    border: 1px solid #181739;
+}
+.fromAreasTabsContainer.activeBlog {
+    position: fixed;
+    display: flex;
+    box-shadow: 0px 20px 50px rgba(18, 17, 39, 0.08);
+    background: #FFF5F2;
+    border-radius: 24px;
+    border: 1px solid #181739;
+    width: 100%;
+    flex-direction: column-reverse;
+}
+.fromAreasTabsContainerLeft {
+    width: 100% !important;
+    max-width: 100%;
+    box-sizing: border-box;
+    min-width: 100%;
+}
+.fromAreas .fromAreasLeft {
+    padding: 64px 0 !important;
+}
 }
 @media(max-width: 767px) {
     .bunner .wrapper .bunnerLeft{
@@ -3374,9 +3413,6 @@ header {
         margin-top: 0;
         width: 100%;
         margin-bottom: 0;
-    }
-    .fromAreas .fromAreasLeft {
-        padding: 0 !important;
     }
     .blogSliderNext  {
         right: -10px !important;
@@ -3648,26 +3684,7 @@ header {
     .fromAreasRegistration .wrapper {
         padding: 64px 16px !important;
     }
-    .fromAreasRight {
-        display: block;
-        position: absolute;
-        left: 0;
-        bottom: -100%;
-        
-    }
-    .fromAreasLeft {
-        position: relative;
-        z-index: 10;
-    }
-    .fromAreasTabsContainer.activeBlog {
-        position: fixed;
-        display: flex;
-        flex-direction: column;
-        box-shadow: 0px 20px 50px rgba(18, 17, 39, 0.08);
-        background: #FFF5F2;
-        border-radius: 24px;
-        border: 1px solid #181739;
-    }
+
 }
 @media (max-width: 1350px) {
     .transformSection .wrapper {
