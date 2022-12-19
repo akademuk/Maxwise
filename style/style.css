@@ -827,6 +827,9 @@ h1 {
     left: 35%;
     height: 100%;
 }
+.fromAreasSuport {
+    overflow: hidden;
+}
 .fromAreasSuport .wrapper .fromAreasLeft{
     padding-bottom: 240px;
 }
@@ -871,10 +874,6 @@ h1 {
     font-size: 20px;
     line-height: 140%;
     margin-bottom: 32px;
-}
-.servicesClients .wrapper {
-    max-width: 100%;
-    padding: 0;
 }
 .servicesLeft h2 {
     font-weight: 700;
@@ -2061,8 +2060,8 @@ h1 {
     display: flex;
     margin-left: 12px;
 } 
-.fromAreasSuportLeft {
-    width: 500px;
+.suportRightArea {
+    left: 40% !important;
 }
 .fromAreasTabsContainerRight {
     height: 100%;
@@ -2681,6 +2680,24 @@ h1 {
     margin: 0;
     padding: 0 64px;
     box-sizing: border-box;
+}
+.fromAreasTabsContainerLeft {
+    height: 100%;
+}
+.bunnerRightSupport img {
+    object-fit: contain !important;
+}
+.aboutMaxwiseClientsImg .slick-list .slick-track {
+    width: 100%;
+}
+.servicesClients .wrapper {
+    padding: 0;
+    max-width: 100%;
+}
+.closeSvgBlogPosition {
+    position: absolute;
+    top: 20px;
+    right: 20px;
 }
 .blogSliderPrev {
     top: 20% !important;
@@ -3460,7 +3477,7 @@ header {
     width: 100%;
     flex-direction: column-reverse;
     align-items: center;
-    padding-top: 100px !important;
+    padding-top: 50px !important;
 }
 
 .fromAreasTabsContainer {
@@ -3478,7 +3495,7 @@ header {
     flex-direction: row !important;
 }
 .bunnerRightSupport {
-    height: 570px;
+    height: 100%;
 }
 .suportbunnerLeft {
     margin-bottom: 50px;
@@ -4167,6 +4184,12 @@ header {
     }
     .blogSliderArrow {
         padding: 0 16px;
+    }
+    .fromAreasSuport {
+        padding: 0 !important;
+    }
+    .closeSvgBlogPosition {
+        position: static;
     }
 }
 @media (max-width: 576px) {
