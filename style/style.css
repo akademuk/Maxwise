@@ -3596,6 +3596,9 @@ header {
         padding: 0 16px;
         box-sizing: border-box;
     }
+    header .wrapper {
+        padding-left: 0;
+    }
     .showContainer  {
         background: transparent !important;
     }
