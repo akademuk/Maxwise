@@ -1227,7 +1227,7 @@ h1 {
     width: 100%;
 }
 .blogContent {
-    background: url(../img/noise.png),#FFF5F2;
+    background:#FFF5F2;
     background-repeat: repeat;
     background-size: auto;
     width: 100%;
@@ -4212,7 +4212,15 @@ header {
     padding-bottom: 0;
 }
 }
-
+@media (max-width: 1350px) {
+    .blogSliderArrow {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .blogSliderNext  {
+        margin-left: 16px;
+    }
+}
 
 
 
