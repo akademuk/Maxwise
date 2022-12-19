@@ -3699,6 +3699,7 @@ header {
     }
     .fromAreasTabsContainerRight {
         width: 100%;
+        flex-direction: column;
     }
     .fromAreasTabsContainerRight img {
         object-fit: cover;
