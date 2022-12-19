@@ -2638,7 +2638,11 @@ h1 {
 .postTabsFormS .wrapper form div {
     margin-bottom: 16px;
 }
-
+.blogContentBack {
+    background: url(../img/noise.png), #FFF5F2 !important;
+    background-size: auto;
+    background-repeat: repeat;
+}
 
 
 
@@ -2683,6 +2687,9 @@ h1 {
 }
 .fromAreasTabsContainerLeft {
     height: 100%;
+}
+.blogContentBack {
+    padding-bottom: 100px !important;
 }
 .bunnerRightSupport img {
     object-fit: contain !important;
@@ -3606,6 +3613,9 @@ header {
         padding: 0 23px;
         box-sizing: border-box;
     }
+    .blogContentBack {
+        padding-bottom: 200px !important;
+    }
     header {
         left: 0;
         transform: unset;
@@ -4174,7 +4184,7 @@ header {
         bottom: -125px;
     }
     .div4 .blogSectionImg, .div2 .blogSectionImg, .div3 .blogSectionImg {
-        height: 300px !important;
+        height: 175px !important;
     }
     .div4, .div2, .div3 {
         height: 100% !important;
@@ -4191,6 +4201,12 @@ header {
     .closeSvgBlogPosition {
         position: static;
     }
+    .blogContentBack {
+        background: url(../img/noise.png), #FFF5F2 !important;
+        background-size: auto;
+        background-repeat: repeat;
+    }
+    
 }
 @media (max-width: 576px) {
     .div4, .div2, .div3 {
@@ -4244,6 +4260,11 @@ header {
     background: #FFF5F2 !important;
     padding-top: 0;
     padding-bottom: 0;
+}
+.blogContentBack {
+    background: url(../img/noise.png), #FFF5F2 !important;
+    background-size: auto;
+    background-repeat: repeat;
 }
 }
 @media (max-width: 1350px) {
