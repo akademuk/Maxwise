@@ -369,10 +369,9 @@ header {
     text-decoration: none;
 }
 header .wrapper {
-    max-width: 100%;
+    max-width: 1185px;
     width: 100%;
-    padding-left: 128px;
-    padding-right: 128px;
+    margin: 0 auto;
     box-sizing: border-box;
 }
 .bunner {
