@@ -4154,6 +4154,9 @@ header {
     .div3 {
         margin-top: 24px;
     }
+    .blogSliderArrow {
+        padding: 0 16px;
+    }
 }
 @media (max-width: 576px) {
     .div4, .div2, .div3 {
@@ -4205,7 +4208,7 @@ header {
 }
 .blogContent {
     background: #FFF5F2 !important;
-    padding-top: 100px;
+    padding-top: 0;
     padding-bottom: 0;
 }
 }
