@@ -4171,10 +4171,15 @@ header {
     .fromAreasTabsContainer {
         padding-top: 16px !important;
     }
+    .showContainer {
+        transform: translateX(0) !important;
+        transform: translateY(100%) !important;
+        animation: bottom-animation 0.6s;
+    }
     .showContainer.showContainerAnimation {
         animation: bottom-animation 0.6s;
-        transform: translateY(0);
         transform: translateX(0);
+        transform: translateY(0) !important;
     }
     @keyframes bottom-animation {
         0% {
