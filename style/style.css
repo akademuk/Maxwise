@@ -2521,6 +2521,9 @@ h1 {
 .bunnerRegistration img {
     width: 100%;
 }
+.faqRightAccardion:nth-last-of-type(1) {
+    margin-bottom: 32px;
+}
 .fromAreasTabsRegitstration {
     flex-direction: column;
     align-items: flex-start;
@@ -2939,7 +2942,9 @@ h1 {
 .postTabsLeft .tabs li:hover a {
     color: #CD6C4F;
 }
-
+.tabsImg {
+    display: none;
+}
 
 
 
@@ -3020,6 +3025,16 @@ h1 {
 .postTabsForm img {
     display: none;
 }
+.tabsArticle li.active .tabsImg {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    max-width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+}
 .postTabsForm {
     margin-top: 32px;
     width: 100%;
@@ -3031,6 +3046,7 @@ h1 {
 .postTabs .wrapper {
     flex-direction: column;
 }
+
 .postTabsRight {
     width: 100%;
 }
@@ -3067,8 +3083,14 @@ h1 {
     position: static;
     transform: unset;
     flex-direction: column;
-    height: 100vh;
-    display: block !important;
+    height: 80vh;
+}
+.postTabsRight {
+    height: 100%;
+}
+.postContentScroll {
+    min-width: 100%;
+    padding-right: 0;
 }
 .fromAreasTabsContainerLeft {
     height: 100%;
