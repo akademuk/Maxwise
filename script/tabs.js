@@ -32,7 +32,7 @@
         $('.tabs li').removeClass('active');
         $(this).addClass('active');
         $('.fromAreasTabsContainer').hide().addClass("activeBlog");
-        // $('.bodyOn').addClass('body');
+        $('.bodyOn').addClass('body');
         var selectTab = $(this).find('a').attr("href");
     
         $(selectTab).fadeIn();
