@@ -1,5 +1,5 @@
 
-  if (screen.width >= 1200) {
+  if (screen.width >= 768) {
     $(document).ready(function($) {
       $('.fromAreasTabsContainer').hide();
       $('.fromAreasTabsContainer:first').show();
@@ -24,7 +24,7 @@
 
 
 
-  if (screen.width <= 1200) {
+  if (screen.width <= 767) {
     $(document).ready(function($) {
       $('.fromAreasTabsContainer').hide();
       $('.tabs li:first').removeClass('active');
@@ -32,7 +32,7 @@
         $('.tabs li').removeClass('active');
         $(this).addClass('active');
         $('.fromAreasTabsContainer').hide().addClass("activeBlog");
-        $('.bodyOn').addClass('body');
+        // $('.bodyOn').addClass('body');
         var selectTab = $(this).find('a').attr("href");
     
         $(selectTab).fadeIn();
