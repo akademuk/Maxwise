@@ -3090,10 +3090,12 @@ h1 {
     top: 0;
     width: 40%;
 }
-
-
-
-
+.fromAreasRightPositions {
+    position: static;
+}
+.suportFromRight {
+    width: 23% !important;
+}
 
 
 
@@ -4058,7 +4060,10 @@ header {
 .fromAreasTabsContainerRight img {
     max-width: 100%;
     object-fit: cover;
-    object-position: center;
+    object-position: right;
+}
+.fromAreas0Btn {
+    padding: 6px 10px;
 }
 .fromAreasTabsContainerLeft {
     min-width: 50%;
@@ -4115,6 +4120,21 @@ header {
 }
 .fromAreasTabsContainerLeft {
     max-width: 55%;
+}
+.fromAreas2s {
+    padding: 0;
+}
+.fromAreasRightPositions .fromAreasTabsContainer {
+    padding: 50px 0;
+}
+.fromAreasRightPositions {
+    width: 75%;
+}
+.fromAreasRightPositions .fromAreasTabsContainer .fromAreasScroll {
+    width: 85%;
+}
+.fromAreasRegistrationRight .fromAreasScroll {
+    width: 100%;
 }
 }
 @media(max-width: 991px) {
@@ -4633,11 +4653,20 @@ header {
         flex-direction: column-reverse !important;
         bottom: 0;
         z-index: 100;
+        justify-content: flex-end;
     }
     .fromAreasTabsContainer.activeBlog {
         padding-top: 16px !important;
         box-shadow: 0px 20px 50px rgba(18, 17, 39, 0.08);
         border-radius: 8px;
+    }
+    .fromAreasTabsContainer.activeBlog {
+        display: flex;
+        justify-content: flex-start;
+    }
+    .fromAreasScroll2 {
+        flex-direction: column !important;
+        justify-content: flex-start !important;
     }
     .fromAreasTabsRegitstration.activeBlog {
         flex-direction: column !important;
@@ -4810,6 +4839,7 @@ header {
     width: 100%;
     flex-direction: column-reverse;
     align-items: center;
+    overflow: hidden !important;
     padding-top: 50px !important;
     transform: translateY(0) !important;
     animation: bottom-animation 0.6s;
@@ -4817,6 +4847,21 @@ header {
 .fromAreasTabsContainerRight {
     position: static !important;
     justify-content: flex-start;
+}
+.fromAreasRightPositions .fromAreasTabsContainer .fromAreasScroll {
+    width: 100%;
+}
+.suportFromRight {
+    width: 100% !important;
+}
+.fromAreasRightPositions .fromAreasTabsContainer {
+    padding-bottom: 0 !important;
+}
+.fromAreasRegistration .wrapper .fromAreasLeft {
+    width: 100% !important;
+}
+.fromAreas.fromAreasRegistration .wrapper .fromAreasLeft ul {
+    width: 100% !important;
 }
 }
 @media (max-width: 576px) {
