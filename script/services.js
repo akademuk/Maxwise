@@ -3,7 +3,7 @@ $(function () {
         dots: true,
         arrows: true,
         infinite: false,
-        slidesToShow: 4.5,
+        slidesToShow: 5,
         slidesToScroll: 1,
         variableWidth: false,
         prevArrow: $('.servicesSliderPrev'),
@@ -14,14 +14,16 @@ $(function () {
                 breakpoint: 1300,
                 settings: {
                     slidesToScroll: 1,
-                    slidesToShow: 3,
+                    slidesToShow: 4,
+                    variableWidth: true,
                 }
             },
             {
                 breakpoint: 767,
                 settings: {
                     slidesToScroll: 1,
-                    slidesToShow: 1.5,
+                    slidesToShow: 2,
+                    variableWidth: true,
                 }
             },
         ]

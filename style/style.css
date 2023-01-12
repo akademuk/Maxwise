@@ -793,7 +793,6 @@ h1 {
 }
 .servicesSliderContainer {
     width: 100%;
-    padding-left: 128px;
 }
 .services {
     max-width: 100%;
@@ -1440,10 +1439,19 @@ h1 {
     margin: 0 12px;
 }
 .servicesSlider .slick-list {
-    margin: 0 -12px;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 .servicesSlider .slick-list .slick-track .slick-slide{
     margin: 0 12px;
+}
+.servicesSlider {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1185px;
+    height: 350px;
+    margin-bottom: 50px;
 }
 .blogContentItem img {
     border-radius: 12px 12px 0 0;
@@ -1604,6 +1612,10 @@ h1 {
     display: flex;
     align-items: center;
     text-decoration: none;
+}
+.fromAreasScroll.fromAreasScroll2 {
+    flex-direction: column !important;
+    width: 100%;
 }
 .footerContactPhone::before {
     content: "";
@@ -2395,6 +2407,8 @@ h1 {
     line-height: 150%;
     color: #1E1D28;
     margin-bottom: 24px;
+    width: 100%;
+    text-align: left;
 }
 .fromAreasTabsContainer p {
     font-weight: 400;
@@ -2517,8 +2531,8 @@ h1 {
 }
 .priceOpen {
     position: absolute;
-    top: -310%;
-    right: 55px;
+    top: -200px;
+    right: 20px;
     background: #FFF5F2;
     box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
     padding: 32px;
@@ -3036,11 +3050,16 @@ h1 {
     align-items: flex-start;
 }
 .faqLeft {
-    margin-top: 300px;
+    margin-top: 85 px;
 }
-.fromAreas.fromAreasRegistration {
-    background: #F4E3C4 !important;
+.bunnerLeftRegistration {
+    max-width: 1185px;
+    margin: 0 auto;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
 }
+
 .fromAreasRightSupport {
     position: relative;
     left: 0 !important;
@@ -3130,9 +3149,6 @@ h1 {
     .transformSection .wrapper {
        justify-content: flex-start !important;
     }
-    .transformSectionRight {
-        margin-left: 10%;
-    }
 }
 @media (max-width: 1200px) {
 .wrapper {
@@ -3147,6 +3163,9 @@ h1 {
 }
 .otherArticlesSliderDots {
     max-width: 100%;
+}
+.showContainerSection {
+    height: 280px;
 }
 .otherArticlesSliderDots .slick-dots {
     max-width: 100%;
@@ -3354,6 +3373,7 @@ h1 {
     font-weight: 700;
     font-size: 20px;
     line-height: 140%;
+    margin-bottom: 24px;
 }
 .services {
     padding-top: 0;
@@ -3362,7 +3382,7 @@ h1 {
     margin-left: auto;
 }
 .servicesSliderArrow {
-    margin-bottom: 24px;
+    margin-bottom: 0;
 }
 .servicesSliderContainer {
     padding-left: 64px;
@@ -3370,10 +3390,10 @@ h1 {
 .supportForm {
     background: #F4E3C4;
     margin-top: -1px;
-    padding: 64px;
+    padding: 64px 0;
 }
 .supportForm .wrapper {
-    padding: 64px 16px;
+    padding: 64px;
     background: #FFF5F2;
     box-sizing: border-box;
 }
@@ -3466,7 +3486,7 @@ h1 {
 }
 .supportForm .wrapper p {
     text-align: center;
-    margin-bottom: 0;
+    margin-bottom: 30px;
 }
 .stagesLeft {
     width: 100%;
@@ -4011,15 +4031,14 @@ header {
 }
 .fromAreasScroll.fromAreasScroll2 {
     flex-direction: column;
+    width: 100%;
 }
 .fromAreasLeft {
     position: relative;
     z-index: 10;
 }
 
-.fromAreasScroll.fromAreasScroll2 {
-    flex-direction: column;
-}
+
 
 
 .bunnerRightSupport {
@@ -4145,10 +4164,52 @@ header {
 .fromAreasRegistrationRight .fromAreasScroll {
     width: 100%;
 }
+.bunnerLeftRegistration {
+    transform: unset;
+}
+.fromAreasRightButtonsRegistration {
+    flex-direction: row !important;
+}
+.fromAreasRightButtonsGetRegistration {
+    margin-left: 32px;
+}
 }
 @media(max-width: 991px) {
     .footerMap {
         height: 245px;
+    }
+    .fromAreasRightButtonsPrice {
+        font-size: 16px !important;
+    }
+    .fromAreasRightButtonsGetRegistration {
+        font-size: 16px;
+    }
+    .stages {
+        padding-top: 0;
+    }
+    .fromAreasRegistration .wrapper {
+        padding: 0 32px !important;
+    }
+    .servicesLeft {
+        padding: 0 32px;
+    }
+    .servicesSliderContainer {
+        padding-left: 32px;
+    }
+    .wrapper {
+        padding: 0 32px !important;
+    }
+    .supportForm .wrapper {
+        padding: 64px 32px !important;
+    }
+    .stages .wrapper {
+        padding: 0 32px;
+    }
+    .bunner .wrapper {
+        padding: 0 !important;
+    }
+    .transformItem {
+        width: 300px !important;
     }
 }
 @media(max-width: 767px) {
@@ -4156,6 +4217,20 @@ header {
         width: 100%;
         padding: 0 23px;
         box-sizing: border-box;
+    }
+    .fromAreasRegistration .wrapper .fromAreasLeft {
+        padding-top: 0 !important;
+    }
+    .footerMap {
+        width: 65%;
+        height: 320px;
+    }
+    .fromAreasRegistration {
+        background: #FFF5F2;
+    }
+    .footerMap img {
+        object-fit: cover;
+        object-position: center;
     }
     .fromAreasScroll {
         overflow: scroll;
@@ -4334,6 +4409,9 @@ header {
         width: 100%;
         flex-direction: column;
     }
+    .stages {
+        padding-top: 64px;
+    }
     .fromAreasTabsContainerRight img {
         object-fit: cover;
         width: 100%;
@@ -4461,9 +4539,6 @@ header {
     }
     .fromAreas .wrapper {
         padding-bottom: 64px;
-    }
-    .footerTop {
-        flex-direction: column;
     }
     .aboutMaxwiseRight {
         width: 100%;
@@ -4897,15 +4972,11 @@ header {
     .transformSectionRight {
         margin-left: 0 !important;
     }
-
     .servicesLeft h2 {
         margin-bottom: 16px;
     }
     .fromAreasRegistration .wrapper .fromAreasLeft {
         padding: 0 !important;
-    }
-    .fromAreas .wrapper {
-        padding-bottom: 0 !important;
     }
     .faqLeft {
     margin-top: 0;
@@ -4916,7 +4987,12 @@ header {
         z-index: 100;
         bottom: 0;
       }
-      
+      .footerTop {
+        flex-direction: column;
+      }
+      .supportForm .wrapper {
+        padding: 64px 16px !important;
+      }
        @keyframes bear-animation {
           0% {
               transform: translateY(100%);
