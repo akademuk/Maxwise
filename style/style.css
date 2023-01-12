@@ -3270,7 +3270,7 @@ h1 {
     padding-right: 0;
 }
 .fromAreasTabsContainerLeft {
-    height: 100%;
+    height: auto;
 }
 .blogContentBack {
     padding-bottom: 100px !important;
