@@ -3122,7 +3122,12 @@ h1 {
 .suportFromRight {
     width: 23% !important;
 }
-
+.areWeContainerrr {
+    width: 48% !important;
+}
+.transformSectionSuppport .wrapper{
+    padding: 0 64px !important;
+}
 
 
 
@@ -3877,6 +3882,7 @@ header {
 .fromAreasLeftSupport ul {
     max-width: 100%;
 }
+
 .fromAreas1Btn {
     margin-right: 0;
 }
@@ -4197,6 +4203,12 @@ header {
 .transformSection {
     padding-bottom: 64px !important;
 }
+.areWeContainerrr {
+    width: 48% !important;
+}
+.transformSectionSuppport .wrapper{
+    padding: 0 64px !important;
+}
 }
 @media(max-width: 991px) {
     .footerMap {
@@ -4237,6 +4249,12 @@ header {
     }
     .transformItems {
         width: 100% !important;
+    }
+    .areWeContainerrr {
+        width: 48% !important;
+    }
+    .transformSectionSuppport .wrapper{
+        padding: 0 32px !important;
     }
 }
 @media(max-width: 767px) {
@@ -5001,10 +5019,34 @@ header {
 .faqLeft {
     margin-top: 0 !important;
 }
+.transformSectionSuppport .wrapper .transformSectionRigh .areWeContainer {
+    flex-direction: row;
+}
 }
 @media (max-width: 576px) {
     .div4, .div2, .div3 {
         height: 300px !important;
+    }
+    .faq .wrapper {
+        padding: 0 16px !important;
+    }
+    .services {
+        padding-top: 0;
+    }
+    .feedback .wrapper {
+        padding: 0 16px !important;
+    }
+    .footer .wrapper {
+        padding: 0 16px !important;
+    }
+    .transformSectionSuppport .wrapper .transformSectionRigh .areWeContainer {
+        flex-direction: column;
+    }
+    .servicesClients .wrapper {
+        padding: 0 !important;
+    }
+    .areWeContainerrr {
+        width: 100% !important;
     }
     .fromAreasTabsContainer {
         position: absolute;

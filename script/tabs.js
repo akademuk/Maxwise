@@ -32,13 +32,13 @@
         $('.tabs li').removeClass('active');
         $(this).addClass('active');
         $('.fromAreasTabsContainer').hide().addClass("activeBlog");
-        $('.bodyOn').addClass('body');
+        $('body').addClass('body');
         var selectTab = $(this).find('a').attr("href");
     
         $(selectTab).fadeIn();
         $(".closeSvgBlog").click(function(){
           $(".fromAreasTabsContainer").hide();
-          $('.bodyOn').removeClass('body');
+          $('body').removeClass('body');
         });
       });
     });
