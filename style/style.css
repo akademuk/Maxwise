@@ -3114,7 +3114,11 @@ h1 {
 
 
 
-
+@media (max-width: 1500px) {
+    .fromAreasScroll {
+        justify-content: flex-start;
+    }
+} 
 
 @media (max-width: 1350px) {
     .blogSliderPrev {
@@ -4119,7 +4123,7 @@ header {
     width: 70% !important;
 }
 .fromAreasTabsContainerLeft {
-    max-width: 55%;
+    max-width: 75%;
 }
 .fromAreas2s {
     padding: 0;
