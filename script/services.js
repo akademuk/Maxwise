@@ -5,7 +5,7 @@ $(function () {
         infinite: false,
         slidesToShow: 5,
         slidesToScroll: 1,
-        variableWidth: false,
+        variableWidth: true,
         prevArrow: $('.servicesSliderPrev'),
         nextArrow: $('.servicesSliderNext'),
         appendDots: $('.servicesSliderDots'),

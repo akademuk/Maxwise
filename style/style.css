@@ -539,6 +539,7 @@ h1 {
     font-weight: 700;
     font-size: 35px;
     line-height: 130%;
+    box-sizing: border-box;
     color: #1E1D28;
 }
 .transformSection {
@@ -1566,6 +1567,12 @@ h1 {
     border: 1px solid rgba(30, 29, 40, 0.12);
     border-radius: 64px;
     transition: all 0.3s;
+}
+.transformItem {
+    width: 300px !important;
+}
+.transformItems {
+    width: 100% !important;
 }
 .footerInformation ul li {
     padding: 6px 20px;
@@ -3052,7 +3059,7 @@ h1 {
 .faqLeft {
     margin-top: 85 px;
 }
-.bunnerLeftRegistration {
+.bunnerLeft {
     max-width: 1185px;
     margin: 0 auto;
     width: 100%;
@@ -3149,6 +3156,9 @@ h1 {
     .transformSection .wrapper {
        justify-content: flex-start !important;
     }
+    .transformSectionLeft {
+        margin-right: 100px;
+    }
 }
 @media (max-width: 1200px) {
 .wrapper {
@@ -3160,6 +3170,17 @@ h1 {
 }
 .comentForm textarea {
     width: 100%;
+}
+.transformSliderDots .slick-dots {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.transformSliderDots .slick-dots li {
+    width: 10%;
+}
+.transformSliderDots .slick-dots li.slick-active {
+    width: 10%;
 }
 .otherArticlesSliderDots {
     max-width: 100%;
@@ -4164,7 +4185,7 @@ header {
 .fromAreasRegistrationRight .fromAreasScroll {
     width: 100%;
 }
-.bunnerLeftRegistration {
+.bunnerLeft {
     transform: unset;
 }
 .fromAreasRightButtonsRegistration {
@@ -4172,6 +4193,9 @@ header {
 }
 .fromAreasRightButtonsGetRegistration {
     margin-left: 32px;
+}
+.transformSection {
+    padding-bottom: 64px !important;
 }
 }
 @media(max-width: 991px) {
@@ -4210,6 +4234,9 @@ header {
     }
     .transformItem {
         width: 300px !important;
+    }
+    .transformItems {
+        width: 100% !important;
     }
 }
 @media(max-width: 767px) {
@@ -4320,12 +4347,30 @@ header {
         box-sizing: border-box;
     }
     .transformSectionLeft h4 {
-        width: max-content !important;
+        width: 100% !important;
         box-sizing: border-box;
     }
     .showContainer svg {
         width: 20px;
         height: 20px;
+    }
+    .aboutMaxwiseClientsImg .slick-list .slick-track {
+        padding: 0 !important;
+    }
+    .aboutMaxwiseClientsImg .slick-list {
+        padding: 0 !important;
+    }
+    .aboutMaxwise {
+        padding-bottom: 64px;
+    }
+    .blog .wrapper {
+        padding: 0 16px !important;
+    }
+    .aboutMaxwise .wrapper {
+        padding: 0 16px !important;
+    }
+    .aboutMaxwiseLeft {
+        padding: 0 !important;
     }
     .transformSectionLeft {
         margin-bottom: 60px;
@@ -4968,6 +5013,9 @@ header {
         transform: translateY(100%);
         transition: .3s all;
         z-index: 100;
+    }
+    .blog .wrapper {
+        padding-right: 0 !important;
     }
     .transformSectionRight {
         margin-left: 0 !important;
