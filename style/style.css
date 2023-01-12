@@ -3057,7 +3057,7 @@ h1 {
     align-items: flex-start;
 }
 .faqLeft {
-    margin-top: 85 px;
+    margin-top: 85px;
 }
 .bunnerLeft {
     max-width: 1185px;
@@ -4261,14 +4261,14 @@ header {
     }
     .fromAreasScroll {
         overflow: scroll;
-        height: 75vh;
+        height: 100%;
         width: 100%;
         background: #FFF5F2;
         border-radius: 24px 24px 0 0;
         box-sizing: border-box;
         padding: 32px 16px;
         display: flex;
-        justify-content: flex-end;
+        position: absolute;
         flex-direction: column-reverse;
     }
     .postContentScrollCard {
