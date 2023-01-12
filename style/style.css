@@ -5091,6 +5091,12 @@ header {
                 transform: translateY(0);
           }
     }
+    .stages .wrapper {
+        padding: 0 16px !important;
+    }
+    .blogContent .wrapper {
+        padding: 0 16px !important;
+    }
 }
 @media(min-width: 1900px) {
     .bunnerImg img {
