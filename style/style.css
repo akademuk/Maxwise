@@ -3779,6 +3779,7 @@ header {
 }
 .transformSectionRight {
     width: 60% !important;
+    margin-left: 0;
 }
 .fromAreasRight {
     left: 35%;
@@ -4008,13 +4009,17 @@ header {
 .fromAreasRegistration .wrapper .fromAreasLeft h2 br {
     display: none;
 }
-
+.fromAreasScroll.fromAreasScroll2 {
+    flex-direction: column;
+}
 .fromAreasLeft {
     position: relative;
     z-index: 10;
 }
 
-
+.fromAreasScroll.fromAreasScroll2 {
+    flex-direction: column;
+}
 
 
 .bunnerRightSupport {
@@ -4867,6 +4872,15 @@ header {
 .fromAreas.fromAreasRegistration .wrapper .fromAreasLeft ul {
     width: 100% !important;
 }
+.servicesLeft h2 {
+    margin-bottom: 16px;
+}
+.fromAreasRegistration .wrapper .fromAreasLeft {
+    padding-bottom: 0 !important;
+}
+.faqLeft {
+    margin-top: 0 !important;
+}
 }
 @media (max-width: 576px) {
     .div4, .div2, .div3 {
@@ -4879,6 +4893,22 @@ header {
         transform: translateY(100%);
         transition: .3s all;
         z-index: 100;
+    }
+    .transformSectionRight {
+        margin-left: 0 !important;
+    }
+
+    .servicesLeft h2 {
+        margin-bottom: 16px;
+    }
+    .fromAreasRegistration .wrapper .fromAreasLeft {
+        padding: 0 !important;
+    }
+    .fromAreas .wrapper {
+        padding-bottom: 0 !important;
+    }
+    .faqLeft {
+    margin-top: 0;
     }
     .activeBlog {
         animation: bear-animation .3s;
