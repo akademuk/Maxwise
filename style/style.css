@@ -272,14 +272,18 @@ a {
     position: absolute;
     top: 0;
     right: 0;
-    transform: translateX(110%);
     transition:all .6s;
     z-index: 100;
     display: flex;
     padding-top: 10%;
     justify-content: flex-end;
+    opacity: 0;
+}
+.showContainerAnimationOpacity {
+    opacity: 1;
 }
 .showContainerSection {
+    transform: translateX(110%);
     padding:32px 16px 16px 32px;
     width: 355px;
     height: 335px;
@@ -297,7 +301,7 @@ a {
 }
 .showContainerAnimation {
     animation: bear-animation 0.6s;
-    transform: translateX(0%);
+    transform: translateX(-5%);
   }
   
    @keyframes bear-animation {
@@ -305,7 +309,7 @@ a {
           transform: translateX(110%);
       }
       100% {
-        transform: translateX(0%);
+        transform: translateX(-5%);
       }
   }
 .showContainerFull {
@@ -3163,6 +3167,15 @@ h1 {
     }
 } 
 
+@media (max-width: 1400px) {
+    header .wrapper {
+        padding: 0 100px;
+    }
+    .bunnerImg img {
+        min-height: 825px;
+    }
+} 
+
 @media (max-width: 1350px) {
     .blogSliderPrev {
         position: static;
@@ -4345,9 +4358,6 @@ header {
     header .wrapper {
         padding-left: 0;
     }
-    .showContainer  {
-        background: transparent !important;
-    }
     .aboutMaxwiseClientsImg  .slick-list {
         margin: 0 -12px;
     }
@@ -4455,18 +4465,6 @@ header {
     }
     .fromAreasTabsContainer {
         padding-top: 16px !important;
-    }
-    .showContainer {
-        transform: translateX(0) !important;
-        transform: translateY(100vh) !important;
-        animation: bottom-animation 0.6s;
-        opacity: 0;
-    }
-    .showContainer.showContainerAnimation {
-        animation: bottom-animation 0.6s;
-        transform: translateX(0);
-        opacity: 1;
-        transform: translateY(0) !important;
     }
     @keyframes bottom-animation {
         0% {
@@ -5054,6 +5052,9 @@ header {
     .faq .wrapper {
         padding: 0 16px !important;
     }
+    .showContainerAnimation {
+        transform: translateX(0%);
+    }
     .services {
         padding-top: 0;
     }
@@ -5135,13 +5136,6 @@ header {
     }
 }
 @media (max-width: 400px) {
-    .showContainer {
-        width: 90VW;
-        height: max-content;
-    }
-    .showContainerAnimation {
-        background: transparent;
-    }
     .showContainerFull {
         width: 100%;
     }
