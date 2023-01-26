@@ -4325,15 +4325,15 @@ header {
         box-sizing: border-box;
         padding: 32px 16px;
         display: flex;
-        position: absolute;
+        position: sticky;
         flex-direction: column-reverse;
-    }
-    .fromAreasTabsContainerLeft {
-        overflow: scroll;
     }
     .postContentScrollCard {
         margin-left: 0 !important;
             height: auto;
+    }
+    .fromAreasTabsContainerRight {
+        height: auto !important;
     }
     .blogContentBack {
         padding-bottom: 200px !important;
