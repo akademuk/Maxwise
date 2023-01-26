@@ -4338,6 +4338,9 @@ header {
     .blogContentBack {
         padding-bottom: 200px !important;
     }
+    .footerMap {
+        margin-left: 0;
+    }
     .otherArticles .wrapper {
         padding: 0 16px;
         max-width: 100%;
